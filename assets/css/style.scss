@@ -1,0 +1,222 @@
+                            * {
+                                padding: 0%;
+                                margin: 0%;
+                            }
+                            
+                            $backgroundcolor: black;
+                            $fontcolor1: rgb(68, 0, 255);
+                            $fontcolor2:yellow;
+                            $fontcolor3:black;
+                            $fontcolor4:rgb(211, 207, 242);
+                            $button:rgb(252, 252, 168);
+                            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+                            $mainfont: 'Press Start 2P',
+                            cursive;
+                            body {
+                                overflow-x: hidden;
+                                overflow-y: hidden;
+                                font-family: $mainfont;
+                                font-size: 50%;
+                                text-align: center;
+                                height: 100%;
+                                padding: 5%;
+                                color: $fontcolor2;
+                                background-color: $backgroundcolor;
+                                overflow-x: hidden;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            .container-1 {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                width: 100%;
+                                height: 150px;
+                                border: 5px solid $fontcolor1;
+                                margin-bottom: 2%;
+                                font-size: 120%;
+                                .container-pacman {
+                                    width: 25%;
+                                    border: 5px dotted $fontcolor1;
+                                    padding: 2%;
+                                    font-size: 90%;
+                                    margin: 2%;
+                                    .pacman {
+                                        width: 50px;
+                                        height: 50px;
+                                        margin-bottom: 15px;
+                                        transition: transform .7s ease-in-out;
+                                        &:hover {
+                                            transform: rotate(360deg);
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                                .container1-text {
+                                    width: 25%;
+                                    border: 5px dotted $fontcolor1;
+                                    padding: 2%;
+                                    font-size: 90%;
+                                    margin: 2%;
+                                }
+                            }
+                            
+                            .container-2 {
+                                width: 96%;
+                                height: 150px;
+                                border: 5px dotted $fontcolor1;
+                                padding: 2%;
+                                background-color: $backgroundcolor;
+                                .divtextocolor {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-around;
+                                    width: 100%;
+                                    height: 100px;
+                                    color: $fontcolor1;
+                                    font-size: 180%;
+                                    margin-top: 2%;
+                                    .textocolor {
+                                        text-align: center;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border: 5px dotted $fontcolor1;
+                                        width: 50%;
+                                        height: 120px;
+                                        background-color: $backgroundcolor;
+                                        padding: 1%;
+                                        color: $fontcolor2;
+                                    }
+                                }
+                            }
+                            
+                            .container-3 {
+                                width: 96%;
+                                height: 220px;
+                                border: 5px dotted $fontcolor1;
+                                padding: 2%;
+                                background-color: $backgroundcolor;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                gap: 1%;
+                                .container3-txt {
+                                    border: 5px dotted $fontcolor1;
+                                    background-color: $backgroundcolor;
+                                    color: $fontcolor2;
+                                    width: 30%;
+                                    text-align: start;
+                                    font-size: 130%;
+                                    line-height: 1.3em;
+                                    ;
+                                    padding: 1%;
+                                    gap: 5%;
+                                }
+                                .container3-btn {
+                                    width: 30%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    .btn-action {
+                                        background-color: $fontcolor2;
+                                        font-family: $mainfont;
+                                        font-size: 120%;
+                                        height: 30%;
+                                        width: 60%;
+                                        &:hover {
+                                            cursor: pointer;
+                                            background-color: $button;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            @media (max-width:800px) {
+                                html,
+                                body {
+                                    overflow-x: hidden;
+                                    overflow-y: scroll;
+                                }
+                                body {
+                                    position: relative;
+                                    overflow-x: hidden;
+                                }
+                                .container-1 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    height: 350px;
+                                    .container1-text {
+                                        width: 80%;
+                                        border: 5px dotted $fontcolor1;
+                                        padding: 2%;
+                                        font-size: 90%;
+                                        margin: 2%;
+                                    }
+                                }
+                                .container-2 {
+                                    width: 95%;
+                                    height: 150px;
+                                    font-size: 70%;
+                                    .divtextocolor {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 90%;
+                                        color: $fontcolor1;
+                                        font-size: 180%;
+                                        margin-top: 2%;
+                                    }
+                                }
+                                .container-3 {
+                                    width: 96%;
+                                    height: 600px;
+                                    border: 5px dotted $fontcolor1;
+                                    padding: 2%;
+                                    background-color: $backgroundcolor;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: space-around;
+                                    gap: 1%;
+                                    .container3-txt {
+                                        border: 5px dotted $fontcolor1;
+                                        background-color: $backgroundcolor;
+                                        color: $fontcolor2;
+                                        width: 90%;
+                                        height: 30%;
+                                        text-align: start;
+                                        font-size: 130%;
+                                        line-height: 1.3em;
+                                        ;
+                                        padding: 1%;
+                                        gap: 5%;
+                                    }
+                                    .container3-btn {
+                                        border: 5px dotted $fontcolor1;
+                                        width: 90%;
+                                        height: 30%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-around;
+                                        align-items: center;
+                                        .btn-action {
+                                            background-color: $fontcolor2;
+                                            font-family: $mainfont;
+                                            font-size: 120%;
+                                            height: 30%;
+                                            width: 60%;
+                                            &:hover {
+                                                cursor: pointer;
+                                                background-color: $button;
+                                            }
+                                        }
+                                    }
+                                }
+                            }

@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Press Start 2P", cursive;
+  font-size: 50%;
+  text-align: center;
+  height: 100%;
+  padding: 5%;
+  color: yellow;
+  background-color: black;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 150px;
+  border: 5px solid #4400ff;
+  margin-bottom: 2%;
+  font-size: 120%;
+}
+
+.container-1 .container-pacman {
+  width: 25%;
+  border: 5px dotted #4400ff;
+  padding: 2%;
+  font-size: 90%;
+  margin: 2%;
+}
+
+.container-1 .container-pacman .pacman {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  -webkit-transition: -webkit-transform .7s ease-in-out;
+  transition: -webkit-transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
+}
+
+.container-1 .container-pacman .pacman:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.container-1 .container1-text {
+  width: 25%;
+  border: 5px dotted #4400ff;
+  padding: 2%;
+  font-size: 90%;
+  margin: 2%;
+}
+
+.container-2 {
+  width: 96%;
+  height: 150px;
+  border: 5px dotted #4400ff;
+  padding: 2%;
+  background-color: black;
+}
+
+.container-2 .divtextocolor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  color: #4400ff;
+  font-size: 180%;
+  margin-top: 2%;
+}
+
+.container-2 .divtextocolor .textocolor {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px dotted #4400ff;
+  width: 50%;
+  height: 120px;
+  background-color: black;
+  padding: 1%;
+  color: yellow;
+}
+
+.container-3 {
+  width: 96%;
+  height: 220px;
+  border: 5px dotted #4400ff;
+  padding: 2%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1%;
+}
+
+.container-3 .container3-txt {
+  border: 5px dotted #4400ff;
+  background-color: black;
+  color: yellow;
+  width: 30%;
+  text-align: start;
+  font-size: 130%;
+  line-height: 1.3em;
+  padding: 1%;
+  gap: 5%;
+}
+
+.container-3 .container3-btn {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-3 .container3-btn .btn-action {
+  background-color: yellow;
+  font-family: "Press Start 2P", cursive;
+  font-size: 120%;
+  height: 30%;
+  width: 60%;
+}
+
+.container-3 .container3-btn .btn-action:hover {
+  cursor: pointer;
+  background-color: #fcfca8;
+}
+
+@media (max-width: 800px) {
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .container-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 350px;
+  }
+  .container-1 .container1-text {
+    width: 80%;
+    border: 5px dotted #4400ff;
+    padding: 2%;
+    font-size: 90%;
+    margin: 2%;
+  }
+  .container-2 {
+    width: 95%;
+    height: 150px;
+    font-size: 70%;
+  }
+  .container-2 .divtextocolor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 90%;
+    color: #4400ff;
+    font-size: 180%;
+    margin-top: 2%;
+  }
+  .container-3 {
+    width: 96%;
+    height: 600px;
+    border: 5px dotted #4400ff;
+    padding: 2%;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 1%;
+  }
+  .container-3 .container3-txt {
+    border: 5px dotted #4400ff;
+    background-color: black;
+    color: yellow;
+    width: 90%;
+    height: 30%;
+    text-align: start;
+    font-size: 130%;
+    line-height: 1.3em;
+    padding: 1%;
+    gap: 5%;
+  }
+  .container-3 .container3-btn {
+    border: 5px dotted #4400ff;
+    width: 90%;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-3 .container3-btn .btn-action {
+    background-color: yellow;
+    font-family: "Press Start 2P", cursive;
+    font-size: 120%;
+    height: 30%;
+    width: 60%;
+  }
+  .container-3 .container3-btn .btn-action:hover {
+    cursor: pointer;
+    background-color: #fcfca8;
+  }
+}
+/*# sourceMappingURL=style.css.map */
